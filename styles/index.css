@@ -16,6 +16,7 @@ body.paletaDeColores{
 
 ul{
     list-style: none; 
+    padding: 0;
 }
 
 header{
@@ -81,3 +82,11 @@ a{
     font-size: 50px;
     margin-left: 40px;
 }
+
+.slider-container li{
+    width: 100%;
+}
+
+ img{
+     width: 100%;
+ }
