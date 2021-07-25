@@ -13,17 +13,25 @@
   </head>
   <body class="paletaDeColores">
     <section id="home" class="home">
+      
       <header>
+
         <div class="logo-header">
           <img src="./imgs/prueba3.png" alt="" id="img-logo"/>
         </div>
+
         <nav>
-          <ul>
+          <ul class="menu-container">
             <li>
                 <a href="">Home</a> 
             </li>
-            <li>
+            <!-- Seguros menú, position relaive (hover). Seguros sub-menu, position absolute -->
+            <li class="seguros-menu">
                 <a href="">Seguros</a> 
+                <ul class="seguros-submenu">
+                  <li><a href="">Empresas</a></li>
+                  <li><a href="">Personas</a></li>
+                </ul>
             </li>
             <li>
                 <a href="">Siniestros</a> 
@@ -31,10 +39,11 @@
             <li>
                 <a href="">Contacto</a> 
             </li>
-            <li>
-                <i class="fab fa-whatsapp"></i>
-            </li>
           </ul>
+
+          <div>
+            <i class="fab fa-whatsapp"></i>
+          </div>
         </nav>
       </header>
 

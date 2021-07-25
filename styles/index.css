@@ -14,6 +14,10 @@ body.paletaDeColores{
     --colorTexto: #444443;
 }
 
+ul{
+    list-style: none; 
+}
+
 header{
     width: 100%;
     display: flex;
@@ -30,12 +34,36 @@ header{
     width: 100%;
 }
 
-nav, ul{
-    display: flex;
+nav{
     width: 80%;
+}
+nav, .menu-container{
+    display: flex;
     justify-content: space-around;
-    align-items: center;
-    list-style: none;   
+    align-items: center;  
+}
+
+.menu-container{
+    width: 100%;
+}
+
+.seguros-menu{
+    position: relative;
+}
+
+.seguros-menu:hover>.seguros-submenu{
+    visibility: visible;
+} 
+
+.seguros-submenu{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    padding: 0;
+}
+
+.seguros-submenu li{
+    padding-top: 10px;
 }
 
 a{
