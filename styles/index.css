@@ -47,6 +47,11 @@ nav, .menu-container{
     width: 100%;
 }
 
+.menu-item:hover>a{
+    color: var(--colorPrincipal);
+    font-weight: 500;
+}
+
 .seguros-menu{
     position: relative;
 }
