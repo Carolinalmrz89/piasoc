@@ -39,6 +39,7 @@ header{
 nav{
     width: 75%;
 }
+
 nav, .menu-container{
     display: flex;
     justify-content: space-evenly;
