@@ -83,23 +83,5 @@ a{
     margin-left: 40px;
 }
 
-.slider-container li{
-    width: 100%;
-}
+/**************** SECTION SLIDER *****************/
 
-img{
-     width: 100%;
-}
-
-.menu-slider{
-    display: flex;
-    justify-content: center;
-}
-
-.menu-slider li{
-    padding: 10px;
-}
-
-.fa-circle{
-    color: grey;
-}
