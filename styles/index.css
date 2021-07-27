@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 .logo-header{
@@ -40,7 +40,7 @@ nav{
 }
 nav, .menu-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;  
 }
 
@@ -87,6 +87,19 @@ a{
     width: 100%;
 }
 
- img{
+img{
      width: 100%;
- }
+}
+
+.menu-slider{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-slider li{
+    padding: 10px;
+}
+
+.fa-circle{
+    color: grey;
+}
