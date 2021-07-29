@@ -14,8 +14,14 @@ body.paletaDeColores{
     --colorTexto: #444443;
 }
 
+ul{
+    list-style: none; 
+    padding: 0;
+}
+
 header{
     width: 100%;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,19 +29,49 @@ header{
 }
 
 .logo-header{
-    width: 20%;
+    width: 25%;
 }
 
 #img-logo{
     width: 100%;
 }
 
-nav, ul{
+nav{
+    width: 75%;
+}
+
+nav, .menu-container{
     display: flex;
-    width: 80%;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;   
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.menu-container{
+    width: 100%;
+}
+
+.menu-item:hover>a{
+    color: var(--colorPrincipal);
+    font-weight: 500;
+}
+
+.seguros-menu{
+    position: relative;
+}
+
+.seguros-menu:hover>.seguros-submenu{
+    visibility: visible;
+} 
+
+.seguros-submenu{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    padding: 0;
+}
+
+.seguros-submenu li{
+    padding-top: 10px;
 }
 
 a{
@@ -47,4 +83,60 @@ a{
     color: limegreen;
     font-size: 50px;
     margin-left: 40px;
+}
+
+/**************** SECTION SLIDER *****************/
+
+.slider{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container{
+    display: flex;
+    width: 300%;
+    height: 80vh;
+    margin-left: -100%;
+}
+
+.slider-section{
+    width: 100%;
+}
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(0 0 0 / 59%);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-btn:hover{
+    background-color: var(--colorPrincipal);
+}
+
+.slider-btn-right{
+    right: 10px;
+}
+
+.slider-btn-left{
+    left: 10px;
 }
