@@ -66,13 +66,20 @@ nav, .menu-container{
 .seguros-submenu{
     visibility: hidden;
     position: absolute;
-    left: 0;
+    left: -10px;
     padding: 0;
+    z-index: 9;
+    padding-top: 10px;
+    background-color: #FFF;
 }
 
 .seguros-submenu li{
-    padding-top: 10px;
+    padding: 10px;
 }
+
+/* .seguros-submenu li:hover{
+    A definir
+} */
 
 a{
     text-decoration: none;
@@ -109,6 +116,11 @@ a{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.slider-img:hover{
+    opacity: 0.9;
+    transition: 0.2s;
 }
 
 .slider-btn{
