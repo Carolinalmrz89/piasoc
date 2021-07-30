@@ -66,7 +66,7 @@ nav, .menu-container{
 .seguros-submenu{
     visibility: hidden;
     position: absolute;
-    left: -10px;
+    left: -20px;
     padding: 0;
     z-index: 9;
     padding-top: 10px;
@@ -74,16 +74,27 @@ nav, .menu-container{
 }
 
 .seguros-submenu li{
-    padding: 10px;
+    padding: 20px;
 }
 
 /* .seguros-submenu li:hover{
     A definir
 } */
 
+.item-seguros{
+    display: flex;
+    align-items: center;
+}
+
+.fa-chevron-down{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
 a{
     text-decoration: none;
     color: var(--colorTexto);
+    letter-spacing: 1px;
 }
 
 .fa-whatsapp{
@@ -151,4 +162,19 @@ a{
 
 .slider-btn-left{
     left: 10px;
+}
+
+.container-slider-logo{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+
+.slider-logo{
+    width: 25%;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
 }
