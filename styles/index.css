@@ -179,3 +179,25 @@ a{
     bottom: 50px;
 }
 
+/**************** SECTION QUIENES SOMOS *****************/
+
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 80vh;
+    color: white;
+    background-color: var(--colorPrincipal);
+}
+
+.quienes-somos h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.quienes-somos p{
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 0 100px;
+}
