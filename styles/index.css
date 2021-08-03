@@ -186,18 +186,34 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 80vh;
-    color: white;
-    background-color: var(--colorPrincipal);
+    height: 70vh;
+    padding: 0 30px;
+    letter-spacing: 1px;
+    line-height: 1.4;
 }
 
 .quienes-somos h2{
     font-size: 36px;
     font-weight: bold;
+    color: var(--colorPrincipal);
 }
 
 .quienes-somos p{
-    font-size: 24px;
-    letter-spacing: 1px;
-    padding: 0 100px;
+    width: 75%;
+    font-size: 22px;
+    padding: 0 40px;
+    color: var(--colorTexto);
+}
+
+.info-quienes-somos{
+    display: flex;
+}
+
+.img-quienes-somos{
+    width: 25%;
+}
+
+.img-quienes-somos img{
+    width: 100%;
+    padding: 0 30px;
 }
