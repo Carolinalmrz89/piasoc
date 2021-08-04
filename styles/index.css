@@ -203,6 +203,8 @@ a{
     font-size: 22px;
     padding: 0 40px;
     color: var(--colorTexto);
+    text-align: justify;
+    line-height: 1.8;
 }
 
 .info-quienes-somos{
@@ -216,4 +218,14 @@ a{
 .img-quienes-somos img{
     width: 100%;
     padding: 0 30px;
+    
+}
+
+.transform-left{
+    transform: translateX(-20%);
+    transition: 1s;
+}
+
+.aparece{
+    transform: none;
 }
