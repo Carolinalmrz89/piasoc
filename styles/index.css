@@ -235,8 +235,9 @@ a{
 
 .companias{
     width: 100%;
-    padding: 50px;
+    padding: 70px;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 .companias h2{
@@ -271,5 +272,6 @@ a{
     opacity: 1;
     transition: 0.3s;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
