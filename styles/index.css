@@ -78,7 +78,8 @@ nav, .menu-container{
 }
 
 /* .seguros-submenu li:hover{
-    A definir
+    background-color: rgba(245, 244, 244, 0.979);
+    color: var(--colorPrincipal);
 } */
 
 .item-seguros{
@@ -229,3 +230,6 @@ a{
 .aparece{
     transform: none;
 }
+
+/**************** SECTION COMPAÑIAS *****************/
+
