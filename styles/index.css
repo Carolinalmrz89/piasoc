@@ -233,3 +233,34 @@ a{
 
 /**************** SECTION COMPAÑIAS *****************/
 
+.companias{
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+}
+
+.companias h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--colorPrincipal);
+}
+
+.companias-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.companias-item{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    margin: 0 20px;
+}
+
+.companias-item img{
+    width: 100%;
+}
+
