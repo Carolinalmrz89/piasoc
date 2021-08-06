@@ -77,10 +77,11 @@ nav, .menu-container{
     padding: 20px;
 }
 
-/* .seguros-submenu li:hover{
-    background-color: rgba(245, 244, 244, 0.979);
-    color: var(--colorPrincipal);
-} */
+.seguros-submenu li:hover{
+    background-color: rgb(245, 244, 244);
+    font-weight: 500;
+    transition: 0.3s;
+}
 
 .item-seguros{
     display: flex;
@@ -130,10 +131,10 @@ a{
     object-fit: cover;
 }
 
-.slider-img:hover{
+/* .slider-img:hover{
     opacity: 0.9;
     transition: 0.2s;
-}
+} */
 
 .slider-btn{
     display: flex;
@@ -188,7 +189,7 @@ a{
     justify-content: space-evenly;
     text-align: center;
     height: 70vh;
-    padding: 0 30px;
+    padding: 20px 30px;
     letter-spacing: 1px;
     line-height: 1.4;
 }
