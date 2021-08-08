@@ -1,5 +1,7 @@
 "use strict";
 
+// SLIDER
+
 const sliderContainer = document.getElementById("slider-container");
 let sliderSection = document.querySelectorAll(".slider-section");
 let lastSliderSection = sliderSection[sliderSection.length -1];
@@ -43,3 +45,21 @@ setInterval(function(){
     nextSliderSection();
 }, 5000);
 
+
+// TRANSFORM LOGO QUIENES SOMOS
+
+window.addEventListener("scroll", () =>{
+    const logoQuienesSomos = document.querySelector(".img-quienes-somos");
+    let alturaWindow = window.innerHeight/1.3;
+    let distancia = logoQuienesSomos.getBoundingClientRect().top;
+
+    logoQuienesSomos.classList.add("transform-left");
+
+    if(distancia <= alturaWindow){
+        logoQuienesSomos.classList.add("aparece");
+    }
+    else{
+        logoQuienesSomos.classList.remove("aparece");
+    };
+
+})
