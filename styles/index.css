@@ -59,11 +59,29 @@ nav, .menu-container{
     position: relative;
 }
 
-.seguros-menu:hover>.seguros-submenu{
+.seguros-menu:hover>.items-submenu{
     visibility: visible;
 } 
 
-.seguros-submenu{
+.item-seguros{
+    display: flex;
+    align-items: center;
+}
+
+.cotizacion-menu{
+    position: relative;
+}
+
+.cotizacion-menu:hover>.items-submenu{
+    visibility: visible;
+} 
+
+.item-cotizacion{
+    display: flex;
+    align-items: center;
+}
+
+.items-submenu{
     visibility: hidden;
     position: absolute;
     left: -20px;
@@ -73,20 +91,16 @@ nav, .menu-container{
     background-color: #FFF;
 }
 
-.seguros-submenu li{
+.items-submenu li{
     padding: 20px;
 }
 
-.seguros-submenu li:hover{
+.items-submenu li:hover{
     background-color: rgb(245, 244, 244);
     font-weight: 500;
     transition: 0.3s;
 }
 
-.item-seguros{
-    display: flex;
-    align-items: center;
-}
 
 .fa-chevron-down{
     font-size: 10px;
