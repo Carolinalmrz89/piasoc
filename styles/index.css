@@ -203,8 +203,8 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 70vh;
-    padding: 20px 30px;
+    height: 100vh;
+    padding: 20px 100px;
     letter-spacing: 1px;
     line-height: 1.4;
 }
@@ -216,18 +216,9 @@ a{
     color: var(--colorPrincipal);
 }
 
-.quienes-somos p{
-    width: 100%;
-    font-size: 28px;
-    padding: 0 60px;
-    color: var(--colorTexto);
-    text-align: justify;
-    line-height: 1.8;
-}
-
 .info-quienes-somos{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .img-quienes-somos{
@@ -235,28 +226,33 @@ a{
 }
 
 .img-quienes-somos img{
-    width: 100%;
-    padding: 0 30px;
-    
+    width: 100%;    
 }
 
 .descripcion-quienes-somos{
+    width: 65%;
+}
+
+.descripcion-quienes-somos p{
+    font-size: 28px;
+    color: var(--colorTexto);
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.contenedor-btn-seguros{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 75%;
+    justify-content: center;
 }
 
 .btn-seguros{
+    width: 200px;
     padding: 15px 25px;
     font-size: 26px;
     background-color: var(--colorPrincipal);
     color: white;
     border: none;
-    border-radius: 3px;
-    margin-right: 60px;
-    margin-bottom: 15px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
