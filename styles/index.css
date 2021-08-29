@@ -212,13 +212,14 @@ a{
 .quienes-somos h2{
     font-size: 36px;
     font-weight: bold;
+    margin: 30px;
     color: var(--colorPrincipal);
 }
 
 .quienes-somos p{
     width: 100%;
-    font-size: 22px;
-    padding: 0 40px;
+    font-size: 28px;
+    padding: 0 60px;
     color: var(--colorTexto);
     text-align: justify;
     line-height: 1.8;
@@ -253,9 +254,14 @@ a{
     background-color: var(--colorPrincipal);
     color: white;
     border: none;
-    border-radius: 5px;
-    margin-right: 40px;
+    border-radius: 3px;
+    margin-right: 60px;
     margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn-seguros:hover{
+    background-color: var(--colorSecundario);
 }
 
 .border{
