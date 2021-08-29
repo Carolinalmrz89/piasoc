@@ -92,6 +92,7 @@ nav, .menu-container{
 }
 
 .items-submenu li{
+    width: 170px;
     padding: 20px;
 }
 
@@ -215,7 +216,7 @@ a{
 }
 
 .quienes-somos p{
-    width: 75%;
+    width: 100%;
     font-size: 22px;
     padding: 0 40px;
     color: var(--colorTexto);
@@ -225,6 +226,7 @@ a{
 
 .info-quienes-somos{
     display: flex;
+    justify-content: space-around;
 }
 
 .img-quienes-somos{
@@ -237,9 +239,39 @@ a{
     
 }
 
+.descripcion-quienes-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 75%;
+}
+
+.btn-seguros{
+    padding: 15px 25px;
+    font-size: 26px;
+    background-color: var(--colorPrincipal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 40px;
+    margin-bottom: 15px;
+}
+
+.border{
+    position:absolute;
+    background:none;
+    transition:all .5s ease-in-out;
+}
+
 .transform-left{
     transform: translateX(-20%);
     transition: 1s;
+}
+
+.transform-right{
+    transform: translateX(60%);
+    transition: 2s;
 }
 
 .aparece{
