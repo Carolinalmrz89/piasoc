@@ -15,8 +15,20 @@ body.paletaDeColores{
     --colorTexto: #444443;
 }
 
+.seguros h2{
+    font-size: 36px;
+    margin: 30px;
+    color: var(--colorPrincipal);
+}
+.seguros h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+    color: var(--colorTexto);
+}
+
 .seguros{
-    padding: 0 100px;
+    padding: 0 60px;
 }
 
 .empresas, .personas{
@@ -28,6 +40,7 @@ body.paletaDeColores{
 ul{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     list-style: none;
 }
 
@@ -35,14 +48,13 @@ ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 265px;
-    min-height: 100px;
-    background-color: pink;
-    margin: 5px;
+    width: 280px;
+    min-height: 80px;
+    margin: 15px 0;
 }
 
 ul li .contenedor-img{
-    width: 100px;
+    width: 50px;
 }
 
 li img{
@@ -50,7 +62,14 @@ li img{
 }
 
 .contenedor-img, .seguros-item-titulo{
-    padding: 20px;
+    padding: 15px 0;
+}
+
+.seguros-item-titulo{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--colorTexto);
+    
 }
 
 
