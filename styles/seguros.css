@@ -71,6 +71,27 @@ li img{
     
 }
 
+.cauciones-items li{
+    flex-direction: row;
+    width: 350px;
+    color: var(--colorTexto);
+    /* font-weight: bold; */
+}
+
+.cauciones-items i{
+    padding: 20px;
+    margin-right: 15px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    color: snow;
+    background-color: var(--colorPrincipal);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #personas{
     margin-top: 60px;
 }
