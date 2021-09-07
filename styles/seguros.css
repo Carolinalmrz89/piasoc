@@ -75,7 +75,7 @@ li img{
     flex-direction: row;
     width: 350px;
     color: var(--colorTexto);
-    /* font-weight: bold; */
+    font-weight: bold;
 }
 
 .cauciones-items i{
