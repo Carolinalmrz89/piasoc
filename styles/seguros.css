@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.paletaDeColores{
+    --colorPrincipal: #034471;
+    --colorSecundario: #0E7ABF;
+    --colorTerciario: #73CBF3;
+    --colorTexto: #444443;
+}
+
+.seguros h2{
+    width: 100%;
+    color: white;
+    font-size: 36px;
+    padding: 30px 0;
+    text-align: center;
+    background: linear-gradient(to bottom right, var(--colorPrincipal), var(--colorSecundario));
+}
+.seguros h3{
+    font-size: 26px;
+    margin-top: 65px;
+    margin-bottom: 15px;
+    color: var(--colorTexto);
+}
+
+.empresas, .personas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    min-height: 80px;
+    margin: 16px;
+}
+
+ul li .contenedor-img{
+    width: 50px;
+}
+
+li img{
+    width: 100%;
+}
+
+.contenedor-img, .seguros-item-titulo{
+    padding: 15px 0;
+}
+
+.seguros-item-titulo{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--colorTexto);
+    
+}
+
+.cauciones-items li{
+    flex-direction: row;
+    width: 350px;
+    color: var(--colorTexto);
+    font-weight: bold;
+}
+
+.cauciones-items i{
+    padding: 20px;
+    margin-right: 15px;
+    font-size: 22px;
+    width: 40px;
+    height: 40px;
+    color: snow;
+    background-color: var(--colorPrincipal);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#personas{
+    margin-top: 60px;
+}
+
+
+
+
+

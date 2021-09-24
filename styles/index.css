@@ -59,11 +59,29 @@ nav, .menu-container{
     position: relative;
 }
 
-.seguros-menu:hover>.seguros-submenu{
+.seguros-menu:hover>.items-submenu{
     visibility: visible;
 } 
 
-.seguros-submenu{
+.item-seguros{
+    display: flex;
+    align-items: center;
+}
+
+.cotizacion-menu{
+    position: relative;
+}
+
+.cotizacion-menu:hover>.items-submenu{
+    visibility: visible;
+} 
+
+.item-cotizacion{
+    display: flex;
+    align-items: center;
+}
+
+.items-submenu{
     visibility: hidden;
     position: absolute;
     left: -20px;
@@ -73,20 +91,17 @@ nav, .menu-container{
     background-color: #FFF;
 }
 
-.seguros-submenu li{
+.items-submenu li{
+    width: 170px;
     padding: 20px;
 }
 
-.seguros-submenu li:hover{
+.items-submenu li:hover{
     background-color: rgb(245, 244, 244);
     font-weight: 500;
     transition: 0.3s;
 }
 
-.item-seguros{
-    display: flex;
-    align-items: center;
-}
 
 .fa-chevron-down{
     font-size: 10px;
@@ -188,8 +203,8 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    height: 70vh;
-    padding: 20px 30px;
+    height: 100vh;
+    padding: 20px 100px;
     letter-spacing: 1px;
     line-height: 1.4;
 }
@@ -197,20 +212,13 @@ a{
 .quienes-somos h2{
     font-size: 36px;
     font-weight: bold;
+    margin: 30px;
     color: var(--colorPrincipal);
-}
-
-.quienes-somos p{
-    width: 75%;
-    font-size: 22px;
-    padding: 0 40px;
-    color: var(--colorTexto);
-    text-align: justify;
-    line-height: 1.8;
 }
 
 .info-quienes-somos{
     display: flex;
+    justify-content: space-between;
 }
 
 .img-quienes-somos{
@@ -218,14 +226,54 @@ a{
 }
 
 .img-quienes-somos img{
-    width: 100%;
-    padding: 0 30px;
-    
+    width: 100%;    
+}
+
+.descripcion-quienes-somos{
+    width: 65%;
+}
+
+.descripcion-quienes-somos p{
+    font-size: 28px;
+    color: var(--colorTexto);
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.contenedor-btn-seguros{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-seguros{
+    width: 200px;
+    padding: 15px 25px;
+    font-size: 26px;
+    background-color: var(--colorPrincipal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-seguros:hover{
+    background-color: var(--colorSecundario);
+}
+
+.border{
+    position:absolute;
+    background:none;
+    transition:all .5s ease-in-out;
 }
 
 .transform-left{
     transform: translateX(-20%);
     transition: 1s;
+}
+
+.transform-right{
+    transform: translateX(60%);
+    transition: 2s;
 }
 
 .aparece{

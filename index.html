@@ -28,17 +28,22 @@
             <!-- Seguros menú, position relaive (hover). Seguros sub-menu, position absolute -->
             <li class="menu-item seguros-menu">
                 <a href="" class="item-seguros">Seguros <i class="fas fa-chevron-down"></i></a> 
-                <ul class="seguros-submenu">
-                  <li><a href="">Empresas</a></li>
-                  <li><a href="">Personas</a></li>
+                <ul class="items-submenu">
+                  <li><a href="/pages/seguros.html#empresas">Empresas</a></li>
+                  <li><a href="/pages/seguros.html#personas">Personas</a></li>
                 </ul>
             </li>
             <li class="menu-item">
                 <a href="">Siniestros</a> 
             </li>
-            <li class="menu-item">
-              <a href="">Cotización <i class="fas fa-chevron-down"></i></a> 
-          </li>
+            <li class="menu-item cotizacion-menu">
+              <a href="" class="item-cotizacion">Cotización <i class="fas fa-chevron-down"></i></a> 
+              <ul class="items-submenu">
+                <li><a href="">Automóviles</a></li>
+                <li><a href="">Riesgos varios</a></li>
+                <li><a href="">ART</a></li>
+              </ul>
+            </li>
             <li class="menu-item">
                 <a href="">Contacto</a> 
             </li>
@@ -55,6 +60,7 @@
         <div class="slider-container" id="slider-container">
           <div class="slider-section">
             <img src="./imgs/img-1.png" alt="" class="slider-img">
+            <!-- parrafo absoluto al div contenedor: slider-secion -->
           </div>
           <div class="slider-section">
             <img src="./imgs/img-2.png" alt="" class="slider-img">
@@ -83,12 +89,16 @@
             <img src="./imgs/prueba.png" alt="">
           </div>
 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, quidem? Voluptas delectus molestias dolorum culpa itaque enim sed a odit, sunt voluptates non tenetur, odio laudantium, vitae assumenda blanditiis sapiente quia! Dolor sint facilis quis voluptas, odit, ratione omnis, ad aliquid ipsam excepturi accusamus non dolore ullam! Hic praesentium, dolor, culpa sequi ab commodi, nam quod deserunt similique dignissimos aliquid cum. Quasi at, ipsa eum voluptatibus commodi non laborum iusto minus itaque, fugit voluptatem.
-          </p>
-      </div>
-      </section>
+          <div class="descripcion-quienes-somos">
+            <p>Somos una empresa de productores de seguros que se inició de forma independiente en el año 1980. Desde entonces, nos enfocamos en ofrecer el mejor servicio a nuestros clientes.            
+            </p>
+          </div>
+        </div>
 
-      <section id="seguros" class="seguros"></section>
+        <div class="contenedor-btn-seguros">
+          <a href="/pages/seguros.html" target="_blank" class="btn-seguros">Seguros</a>
+        </div>
+      </section>
 
       <section id="companias" class="companias">
         <h2>Compañías</h2>

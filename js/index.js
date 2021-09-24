@@ -50,16 +50,21 @@ setInterval(function(){
 
 window.addEventListener("scroll", () =>{
     const logoQuienesSomos = document.querySelector(".img-quienes-somos");
+    const btnSeguros = document.querySelector(".btn-seguros");
+
     let alturaWindow = window.innerHeight/1.3;
     let distancia = logoQuienesSomos.getBoundingClientRect().top;
 
     logoQuienesSomos.classList.add("transform-left");
+    btnSeguros.classList.add("transform-right");
 
     if(distancia <= alturaWindow){
         logoQuienesSomos.classList.add("aparece");
+        btnSeguros.classList.add("aparece");
     }
     else{
         logoQuienesSomos.classList.remove("aparece");
+        btnSeguros.classList.remove("aparece");
     };
 
 })
