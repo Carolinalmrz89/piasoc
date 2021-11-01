@@ -1,5 +1,3 @@
-"use strict";
-
 // SLIDER
 
 const sliderContainer = document.getElementById("slider-container");

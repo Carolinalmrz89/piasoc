@@ -324,3 +324,33 @@ a{
     transform: scale(1.1);
 }
 
+
+/************ CONTACTO *************/
+#contacto{
+    padding: 30px 70px;
+}
+.container-cards-contacto{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 20px;
+    border-top: 2px solid rgb(216, 214, 214);
+    border-bottom: 2px solid rgb(216, 214, 214);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    color: var(--colorTexto);
+    padding: 1.25rem;
+}
+
+.card i{
+    font-size: 30px;
+    color: var(--colorSecundario);
+}
