@@ -299,7 +299,7 @@ a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin-top: 80px;
 }
 
 .companias-item{
@@ -329,6 +329,7 @@ a{
 #contacto{
     padding: 30px 70px;
 }
+
 .container-cards-contacto{
     display: flex;
     justify-content: space-around;
@@ -345,7 +346,7 @@ a{
     width: 30%;
     height: 200px;
     border-radius: 6px;
-    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    box-shadow: 0 2px 20px rgba(150, 149, 149, 0.2);
     color: var(--colorTexto);
     padding: 1.25rem;
 }
@@ -353,4 +354,35 @@ a{
 .card i{
     font-size: 30px;
     color: var(--colorSecundario);
+}
+
+/*********** FOOTER ************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px;background-color: var(--colorPrincipal);
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+footer a{
+    color: white;
+}
+
+footer .link-redes{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+footer i{
+    font-size: 36px;
+    color: white;
+    margin-right: 30px;
 }
