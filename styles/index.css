@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body.paletaDeColores{
+    --colorPrincipal: #034471;
+    --colorSecundario: #0E7ABF;
+    --colorTerciario: #73CBF3;
+    --colorTexto: #444443;
+}
+
+ul{
+    list-style: none; 
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.logo-header{
+    width: 25%;
+}
+
+#img-logo{
+    width: 100%;
+}
+
+nav{
+    width: 75%;
+}
+
+nav, .menu-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.menu-container{
+    width: 100%;
+}
+
+.menu-item:hover>a{
+    color: var(--colorPrincipal);
+    font-weight: 500;
+}
+
+.seguros-menu{
+    position: relative;
+}
+
+.seguros-menu:hover>.items-submenu{
+    visibility: visible;
+} 
+
+.item-seguros{
+    display: flex;
+    align-items: center;
+}
+
+.cotizacion-menu{
+    position: relative;
+}
+
+.cotizacion-menu:hover>.items-submenu{
+    visibility: visible;
+} 
+
+.item-cotizacion{
+    display: flex;
+    align-items: center;
+}
+
+.items-submenu{
+    visibility: hidden;
+    position: absolute;
+    left: -20px;
+    padding: 0;
+    z-index: 9;
+    padding-top: 10px;
+    background-color: #FFF;
+}
+
+.items-submenu li{
+    width: 170px;
+    padding: 20px;
+}
+
+.items-submenu li:hover{
+    background-color: rgb(245, 244, 244);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+.fa-chevron-down{
+    font-size: 10px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+a{
+    text-decoration: none;
+    color: var(--colorTexto);
+    letter-spacing: 1px;
+}
+
+.fa-whatsapp{
+    color: limegreen;
+    font-size: 45px;
+    margin-left: 40px;
+}
+
+/**************** SECTION SLIDER *****************/
+
+.slider{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-container{
+    display: flex;
+    width: 300%;
+    height: 84vh;
+    margin-left: -100%;
+}
+
+.slider-section{
+    width: 100%;
+}
+
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .slider-img:hover{
+    opacity: 0.9;
+    transition: 0.2s;
+} */
+
+.slider-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    color: white;
+    background-color: rgb(0 0 0 / 59%);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: monospace;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider-btn:hover{
+    background-color: var(--colorPrincipal);
+}
+
+.slider-btn-right{
+    right: 10px;
+}
+
+.slider-btn-left{
+    left: 10px;
+}
+
+.container-slider-logo{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 300;
+}
+
+.slider-logo{
+    width: 25%;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+
+/**************** SECTION QUIENES SOMOS *****************/
+
+.quienes-somos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100vh;
+    padding: 20px 100px;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.quienes-somos h2{
+    font-size: 36px;
+    font-weight: bold;
+    margin: 30px;
+    color: var(--colorPrincipal);
+}
+
+.info-quienes-somos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-quienes-somos{
+    width: 25%;
+}
+
+.img-quienes-somos img{
+    width: 100%;    
+}
+
+.descripcion-quienes-somos{
+    width: 65%;
+}
+
+.descripcion-quienes-somos p{
+    font-size: 28px;
+    color: var(--colorTexto);
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.contenedor-btn-seguros{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-seguros{
+    width: 200px;
+    padding: 15px 25px;
+    font-size: 26px;
+    background-color: var(--colorPrincipal);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-seguros:hover{
+    background-color: var(--colorSecundario);
+}
+
+.border{
+    position:absolute;
+    background:none;
+    transition:all .5s ease-in-out;
+}
+
+.transform-left{
+    transform: translateX(-20%);
+    transition: 1s;
+}
+
+.transform-right{
+    transform: translateX(60%);
+    transition: 2s;
+}
+
+.aparece{
+    transform: none;
+}
+
+/**************** SECTION COMPAÑIAS *****************/
+
+.companias{
+    width: 100%;
+    padding: 70px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.companias h2{
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--colorPrincipal);
+}
+
+.companias-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+
+.companias-item{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 100px;
+    margin: 10px 20px;
+}
+
+.companias-item img{
+    width: 100%;
+    filter: grayscale(100%);
+    opacity: 0.8;
+}
+
+.companias-item img:hover{
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/************ CONTACTO *************/
+#contacto{
+    padding: 30px 70px;
+}
+
+.container-cards-contacto{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 20px;
+    border-top: 2px solid rgb(216, 214, 214);
+    border-bottom: 2px solid rgb(216, 214, 214);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    width: 30%;
+    height: 200px;
+    border-radius: 6px;
+    box-shadow: 0 2px 20px rgba(150, 149, 149, 0.2);
+    color: var(--colorTexto);
+    padding: 1.25rem;
+}
+
+.card i{
+    font-size: 30px;
+    color: var(--colorSecundario);
+}
+
+/*********** FOOTER ************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding: 40px;background-color: var(--colorPrincipal);
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+footer a{
+    color: white;
+}
+
+footer .link-redes{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+footer i{
+    font-size: 36px;
+    color: white;
+    margin-right: 30px;
+}
